@@ -1,5 +1,7 @@
 // packages & dependecies needed for the application
 const inquirer = require('inquirer');
+const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
 const fs = require('fs');
 // imports the switch for the shapes used in the shape questionof the question variable
 const generateSVG = require('./lib/shapes');
@@ -7,9 +9,10 @@ const generateSVG = require('./lib/shapes');
 // questions 
 const questions = [
     {
-        type: 'input',
+        type: 'maxlength-input',
         name: 'text',
         message: 'Type up to 3 characters for your SVG',
+        maxLength: 3
     },
     {
         type: 'input',
