@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 // imports the switch for the shapes used in the shape questionof the question variable
-const shapes = require('./lib/shapes');
+const generateSVG = require('./lib/shapes');
 
 // questions 
 const questions = [
@@ -28,3 +28,20 @@ const questions = [
         message: 'Shape color: enter a color word or hexadecimal number starting with a #',
     }
 ]
+// function to write SVG file
+function writeToFile(fileName, data) {
+    fs.writeToFile(fileName, data, (err) =>
+        err ? console.log(err) : console.log('Generated logo.svg'))
+}
+
+
+// initialize app
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        const svgFile = generateSVG(answers);
+        writeToFile('logo.svg', svgFile);
+    })
+}
+
+//  Function call to initalize app
+init();
