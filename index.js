@@ -68,31 +68,3 @@ const userPrompt = () => {
         //  Function call to initalize app
         userPrompt();
         
-
-
-                // let svgString = "";
-                
-        
-                // svgString += ``;
-                // svgString =+ `${answers.shape}`;
-        
-              
-                // if (answers.shape === 'circle') {
-                //     shape = new Circle();
-                //     // svgString += `<circle cx="150" cy="115" r="80" fill="${answers.shapeColor}"/>`
-        
-                // } else if (answers.shape === 'triangle') {
-                //     shape = new Triangle()
-                //     // svgString += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeColor}"/>`;
-        
-                // } else if (answers.shape === 'square') {
-                //     shape === new Square()
-                //     // svgString += `<rect x="73" y="40" width="160" height="160" fill="${answers.shapeColor}"/>`;
-        
-        
-                // } else {
-                //     console.log("There was an error with your shape selection.")
-                // };
-        
-                // svgString += `<text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text> </svg>`;
-                
