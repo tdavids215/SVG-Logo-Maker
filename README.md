@@ -1,10 +1,9 @@
 # SVG-Logo-Maker
 
-[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
   
+  The SVG Logo maker creates custom SVG logos based on user input in the command line. It allows up to 3 characters, custom hex values for colors and shape choice of circle, triangle and square. 
 
   
   ## Table of Content
@@ -20,16 +19,13 @@
 Dependencies:
 
     inquirer@8.2.4
-    inquirer maclength input prompt
+    inquirer maxlength input prompt
     jest
   
   ## Usage
 
-  [Walkthrough video](link here)
+  [Watch the demo](https://drive.google.com/file/d/1i5ggCnX7muOS5YN8yd46qhyS1NeMw41T/view?usp=sharing)
   
-    
-
-
   
   ## License
   
