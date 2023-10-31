@@ -18,6 +18,7 @@
 Dependencies:
 
     inquirer@8.2.4
+    inquirer maclength input prompt
     jest
   
   ## Usage
